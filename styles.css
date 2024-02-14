@@ -1,0 +1,91 @@
+.envelope {
+    width: 300px;
+    height: 200px;
+    background-color: #ffcccc;
+    /* Rojo claro, un color típico de San Valentín */
+    border: 3px solid #ff6666;
+    /* Un tono más oscuro de rojo */
+    border-radius: 15px;
+    /* Un borde redondeado para un aspecto más suave */
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    /* Centra el sobre horizontalmente */
+    top: 50px;
+    /* Mueve el sobre 50px hacia abajo */
+}
+
+.envelope:hover {
+    transform: translateY(-5px);
+}
+
+.flap {
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-top: 40px solid #ffcccc;
+    /* Coincide con el color del sobre */
+    position: absolute;
+    top: -40px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.message-container {
+    padding: 20px;
+    background-color: #fff;
+    /* Un fondo blanco para el mensaje */
+    border-radius: 0 0 15px 15px;
+    /* Redondeado solo en la parte inferior */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+}
+
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    color: #888;
+    cursor: pointer;
+}
+
+.ms-bajo {
+    position: fixed;
+    /* Fijar posición */
+    bottom: 0;
+    /* Alinear al fondo */
+    left: 20px;
+    /* Alinear al margen izquierdo */
+    background-color: #ffcccc;
+    /* Misma paleta de colores */
+    padding: 10px 20px;
+    /* Espaciado */
+    border-radius: 10px 10px 0 0;
+    /* Redondeado en la parte superior */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra */
+    z-index: 2;
+    /* Por encima del resto del contenido */
+}
+
+.ms-bajo footer {
+    margin: 0;
+    /* Eliminar margen predeterminado del footer */
+    font-weight: bold;
+    /* Hacer el texto en negrita */
+    color: #333;
+    /* Color del texto */
+}
+
+body{
+    background-color: bisque;
+}
